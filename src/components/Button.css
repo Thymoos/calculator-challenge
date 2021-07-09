@@ -1,0 +1,50 @@
+button {
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    align-self: center;
+    place-self: center;
+    height: 70px;
+    line-height: 70px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.button--number {
+    box-shadow: 0px 3px hsl(28, 16%, 65%);
+    background-color: hsl(30, 25%, 89%);
+    color: hsl(221, 14%, 31%);
+}
+
+.button--function {
+    background-color: hsl(225, 21%, 49%);
+    box-shadow: hsl(224, 28%, 35%);
+}
+
+.button--equals {
+    background-color: hsl(6, 63%, 50%);
+    box-shadow: hsl(6, 70%, 34%);
+}
+
+.button--narrow {
+    width: 130px;
+}
+
+/* Temporary, not working solution. Created two, separate classes for two 
+elements not fitting into the grid. I think it might have impacted 
+box-shadow css property on some buttons since it's not visible. */
+
+.button--wide1 {
+    width: 200px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.button--wide2 {
+    width: 200px;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
