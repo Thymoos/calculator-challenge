@@ -4,6 +4,7 @@ div.result-container {
     max-width: 700px;
     text-align: right;
     height: 80px;
+    border-radius: 10px;
 }
 
 div.result-container h2 {
