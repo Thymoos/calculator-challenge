@@ -4,9 +4,8 @@ import Button from './components/Button';
 
 function App() {
   return (
-    <>
+    <div className="main-wrapper">
     <h1>calc</h1>
-    <p>Theme change</p>
     <Result/>
     <div className="buttons-container">
       <Button>7</Button>
@@ -28,7 +27,7 @@ function App() {
       <Button onClick={console.log("heyo")} type="button" buttonStyle="button--function" buttonSize="button--wide1">RESET</Button>
       <Button onClick={console.log("heyo")} type="button" buttonStyle="button--equals" buttonSize="button--wide2">=</Button>
     </div>
-    </>
+    </div>
   );
 }
 

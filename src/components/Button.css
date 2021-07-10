@@ -33,10 +33,6 @@ button:hover {
     width: 130px;
 }
 
-/* Temporary, not working solution. Created two, separate classes for two 
-elements not fitting into the grid. I think it might have impacted 
-box-shadow css property on some buttons since it's not visible. */
-
 .button--wide1 {
     width: 250px;
     grid-column-start: 1;

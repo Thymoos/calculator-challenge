@@ -3,7 +3,14 @@ div.buttons-container {
     width: 620px;
     height: 60vh;
     border-radius: 10px;
-    margin-top: 20px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 20px;
+}
+
+div.main-wrapper {
+    width: 620px;
+    height: 60vh;
+    margin: auto;
+    margin-top: 10vh;
 }

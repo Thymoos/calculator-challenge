@@ -1,10 +1,11 @@
 div.result-container {
     background-color: hsl(224, 36%, 15%);
     box-sizing: border-box;
-    max-width: 620px;
+    width: 620px;
     text-align: right;
     height: 80px;
     border-radius: 10px;
+    margin: auto;
 }
 
 div.result-container h2 {
