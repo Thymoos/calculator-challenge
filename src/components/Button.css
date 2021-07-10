@@ -20,13 +20,13 @@ button:hover {
 }
 
 .button--function {
+    box-shadow: 0px 3px hsl(224, 28%, 35%);
     background-color: hsl(225, 21%, 49%);
-    box-shadow: hsl(224, 28%, 35%);
 }
 
 .button--equals {
     background-color: hsl(6, 63%, 50%);
-    box-shadow: hsl(6, 70%, 34%);
+    box-shadow: 0px 3px hsl(6, 70%, 34%);
 }
 
 .button--narrow {
@@ -38,13 +38,13 @@ elements not fitting into the grid. I think it might have impacted
 box-shadow css property on some buttons since it's not visible. */
 
 .button--wide1 {
-    width: 200px;
+    width: 250px;
     grid-column-start: 1;
-    grid-column-end: 2;
+    grid-column-end: 3;
 }
 
 .button--wide2 {
-    width: 200px;
+    width: 250px;
     grid-column-start: 3;
-    grid-column-end: 4;
+    grid-column-end: 5;
 }
