@@ -8,13 +8,25 @@ function App() {
   const [count, setCount] = useState([]);
   const [equation, setEquation] = useState([]);
   const [flag, setFlag] = useState(false);
-
+  const [banner, setBanner] = useState(false);
+  const [block, setBlock] = useState(false);
+  
   const handleNumber = (e) =>{
     const value = e.target.innerHTML;
 
-    console.log(flag);
+    if(banner){
+      setEquation([...equation, {
+        id: equation.length,
+        value: value
+      }]);
+      setCount([{
+        id: count.length,
+        value: value
+      }]);
+      setBanner(false);
+    }
 
-    if(flag===true){
+    else if(flag===true){
       setCount([{
         id: count.length,
         value: value
@@ -38,13 +50,25 @@ function App() {
      value: value
    }]);
   }
+  setBlock(false);
   }
   
   const handleType = (e) =>{
+    if(block===false){
+
     let value = "";
     
     if(e.target.innerHTML === "x") value = "*"
     else value = e.target.innerHTML;
+
+    if(flag){
+      setEquation([...count, {
+        id:equation.length,
+        value: value
+      }]);
+
+      setFlag(false);
+    }else{
 
     setCount([]);
     setEquation([...equation, {
@@ -52,6 +76,9 @@ function App() {
       value: value
     }]);
   }
+  setBlock(true);
+  }
+}
   
   const handleReset = () =>{
     setCount([]);
@@ -82,7 +109,8 @@ function App() {
     setEquation([]);
 
     setFlag(true);
-    console.log(flag)
+    setBanner(true);
+    setBlock(false);
   }
 
   return (
