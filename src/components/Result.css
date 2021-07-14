@@ -12,3 +12,14 @@ div.result-container h2 {
     margin-right: 60px;
     line-height: 90px;
 }
+
+@media (max-width: 420px) {
+    div.result-container {
+        width: 300px;
+    }
+
+    div.result-container h2 {
+        font-size: 30px;
+        margin-right: 25px;
+    }
+}

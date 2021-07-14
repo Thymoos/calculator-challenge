@@ -83,6 +83,10 @@ function App() {
   const handleReset = () =>{
     setCount([]);
     setEquation([]);
+    
+    setFlag(false);
+    setBanner(false);
+    setBlock(false);
   }
   
   const handleDelete = () =>{

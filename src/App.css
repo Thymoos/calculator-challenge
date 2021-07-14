@@ -14,3 +14,14 @@ div.main-wrapper {
     margin: auto;
     margin-top: 10vh;
 }
+
+@media(max-width: 420px) {
+    div.main-wrapper {
+        width: 300px;
+        margin-top: 8vh;
+    }
+
+    div.buttons-container {
+        width: 300px;
+    }
+}

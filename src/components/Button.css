@@ -44,3 +44,22 @@ button:hover {
     grid-column-start: 3;
     grid-column-end: 5;
 }
+
+@media (max-width:420px) {
+    button {
+        height: 60px;
+        line-height: 60px;
+    }
+
+    .button--narrow {
+        width: 60px;
+    }
+
+    .button--wide1 {
+        width: 130px;
+    }
+
+    .button--wide2 {
+        width: 130px;
+    }
+}

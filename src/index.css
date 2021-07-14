@@ -7,3 +7,9 @@ body {
   color: white;
   font-size: 32px;
 }
+
+@media(max-width: 420px) {
+  * {
+    font-size: 20px;
+  }
+}
