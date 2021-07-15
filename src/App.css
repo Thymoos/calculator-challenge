@@ -15,6 +15,17 @@ div.main-wrapper {
     margin-top: 10vh;
 }
 
+h1 {
+    margin: 0;
+}
+
+.top-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
 @media(max-width: 420px) {
     div.main-wrapper {
         width: 300px;
@@ -23,5 +34,10 @@ div.main-wrapper {
 
     div.buttons-container {
         width: 300px;
+    }
+
+    h1 {
+        margin-bottom: 7px;
+        margin-left: 10px;
     }
 }

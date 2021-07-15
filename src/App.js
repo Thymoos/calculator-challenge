@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './App.css';
 import Result from './components/Result';
 import Button from './components/Button';
+import Toggle from './components/Toggle';
 
 function App() {
 
@@ -119,7 +120,10 @@ function App() {
 
   return (
     <div className="main-wrapper">
+      <div className="top-wrapper">
     <h1>calc</h1>
+    <Toggle/>
+    </div>
     <Result count={count}/>
     <div className="buttons-container">
       <Button onClick={handleNumber}>7</Button>
