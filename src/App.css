@@ -1,5 +1,5 @@
 div.buttons-container {
-    background-color: hsl(223, 31%, 20%);
+    background-color: var(--keypad-background);
     width: 620px;
     height: 60vh;
     border-radius: 10px;
@@ -24,6 +24,14 @@ h1 {
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: flex-end;
+}
+
+body.theme-two h1 {
+    color: var(--text-dark);
+}
+
+body.theme-three h1 {
+    color: var(--text-yellow);
 }
 
 @media(max-width: 420px) {

@@ -14,19 +14,19 @@ button:hover {
 }
 
 .button--number {
-    box-shadow: 0px 3px hsl(28, 16%, 65%);
-    background-color: hsl(30, 25%, 89%);
-    color: hsl(221, 14%, 31%);
+    box-shadow: 0px 3px var(--key-light-shadow);
+    background-color: var(--key-light-background);
+    color: var(--text-dark);
 }
 
 .button--function {
-    box-shadow: 0px 3px hsl(224, 28%, 35%);
-    background-color: hsl(225, 21%, 49%);
+    box-shadow: 0px 3px var(--key-dark-shadow);
+    background-color: var(--key-dark-background);
 }
 
 .button--equals {
-    background-color: hsl(6, 63%, 50%);
-    box-shadow: 0px 3px hsl(6, 70%, 34%);
+    background-color: var(--key-red-background);
+    box-shadow: 0px 3px var(--key-red-shadow);
 }
 
 .button--narrow {
@@ -43,6 +43,14 @@ button:hover {
     width: 250px;
     grid-column-start: 3;
     grid-column-end: 5;
+}
+
+body.theme-three .button--number {
+    color: var(--text-yellow);
+}
+
+body.theme-three .button--equals {
+    color: var(--text-dark);
 }
 
 @media (max-width:420px) {

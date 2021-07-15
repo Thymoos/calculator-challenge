@@ -1,5 +1,5 @@
 div.result-container {
-    background-color: hsl(224, 36%, 15%);
+    background-color: var(--screen-background);
     box-sizing: border-box;
     width: 620px;
     text-align: right;
@@ -7,6 +7,15 @@ div.result-container {
     border-radius: 10px;
     margin: auto;
 }
+
+body.theme-two div.result-container h2 {
+    color: var(--text-dark);
+}
+
+body.theme-three div.result-container h2 {
+    color: var(--text-yellow);
+}
+
 
 div.result-container h2 {
     margin-right: 60px;
